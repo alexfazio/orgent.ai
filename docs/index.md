@@ -10,10 +10,10 @@ hero:
   tagline: Markdown to Beautiful Docs in Minutes
   actions:
     - theme: brand
-      text: What is VitePress?
+      text: What is VitePress? TEST!!!
       link: /guide/what-is-vitepress
     - theme: alt
-      text: Quickstart
+      text: Quickstart TEST!!!
       link: /guide/getting-started
     - theme: alt
       text: GitHub

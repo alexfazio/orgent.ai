@@ -18,7 +18,7 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/vuejs/vitepress
-      - theme: brand
+    - theme: brand
       text: What is Orgent?
       link: /guide/what-is-vitepress
     - theme: alt

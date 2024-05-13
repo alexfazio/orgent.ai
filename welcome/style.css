@@ -153,3 +153,29 @@ footer {
   }
 
 }
+
+
+@media (max-width: 380px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+	
+	h1 {
+	font-size: 28px;	
+	}
+	
+	.inner {
+		max-width: 370px;
+	}
+	
+	img {
+		max-width: 280px;
+	}
+
+}

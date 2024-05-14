@@ -49,18 +49,19 @@ footer {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: #333;
-  align: center;
-  /*height: 100%; */
-  /*min-height: 100%;*/
 }
 .site-wrapper-inner {
-  display: table-cell;
-  vertical-align: middle;
-  /*vertical-align: top;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .cover-container {
   margin-right: auto;
@@ -109,19 +110,11 @@ footer {
   border-bottom-color: #fff;
 }
 
-/* logo imag */
+/* logo image */
 .logo {
   margin-bottom: 30px;
-}
-
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -138,44 +131,64 @@ footer {
 }
 
 /*
- * Affix and center
+ * Responsive Adjustments
  */
 
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
+  .masthead-brand {
+    float: left;
   }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
+  .masthead-nav {
+    float: right;
   }
 
+  .cover-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
 }
 
+@media (max-width: 768px) {
+  .cover-heading {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
 
 @media (max-width: 380px) {
-  /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
   }
-  /* Start the vertical centering */
+
   .site-wrapper-inner {
     vertical-align: middle;
   }
-	
-	h1 {
-	font-size: 28px;	
-	}
-	
-	.inner {
-		max-width: 370px;
-	}
-	
-	img {
-		max-width: 280px;
-	}
 
+  .inner {
+    max-width: 370px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    max-width: 280px;
+  }
 }
